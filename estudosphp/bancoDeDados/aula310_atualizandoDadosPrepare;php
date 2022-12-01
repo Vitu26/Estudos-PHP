@@ -1,0 +1,25 @@
+<?php
+ //separando os dados em variáveis
+ $host = "localhost";
+ $user = "root";
+ $pass = "";
+ $db = "itens";
+
+ $conn = new mysqli($host, $user, $pass, $db);
+
+
+ //assunto da aula
+ $id = 11;
+
+ $stmt = $conn->prepare("UPDATE itens SET nome = ?, descricao = ? WHERE id = ?");//mudando o id = 11 no banco de dados
+
+ $nome = "bola";
+ $descricao = "ela é redonda";
+
+ $stmt->bind_param("ssi", $nome, $descricao, $id);//ssi = string(nome), string(descricao), integer(id)
+
+ $stmt->execute();//para atualizar o dado cadastrado
+
+ if($stmt->error) {
+    echo "Erro: " . $stmt->error;
+ }
