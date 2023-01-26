@@ -1,0 +1,3 @@
+Titulo: Pc não liga <br>Categoria: Hardware <br>Descrição: Não liga essa merdaTitulo: Impressora não imprime <br>Categoria: Impressora <br>Descrição: Não imprime<br>Titulo: Impressora não imprime <br>Categoria: Impressora <br>Descrição: Não imprime
+Titulo:  <br>Categoria: Criação Usuário <br>Descrição: 
+Titulo: Pc não liga <br>Categoria: Hardware <br>Descrição: sdadasd
